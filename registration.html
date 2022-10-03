@@ -14,152 +14,137 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
+
   <header>
-    <nav class="navbar p-0 m-0 bg-black-low">
-      <div class="container d-flex flex-nowrap">
-        <a class="navbar-brand ms-4" href="#">
-          <img src="images/logo.webp" alt="logo" width="70">
+    <nav class="navbar navbar-expand-lg bg-black-low">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.webp" alt="KS&EW" width="70">
         </a>
-        <h1 class="heading m-0 fw-normal fs-5 text-white">KARACHI SHIPYARD & ENGINEERING WORKS</h1>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <h1 class="heading ms-auto fw-normal fs-5 text-white">KARACHI SHIPYARD & ENGINEERING WORKS</h1>
+        </div>
       </div>
     </nav>
   </header>
 
-  <main class="main-body">
-    <div class="p-3 m-0">
+  <main>
+    <div class="mt-3 mt-lg-3 mt-md-3">
+      <h2 class="text-center fs-4 m-0 p-0">EMPLOYEE REGISTRATION</h2>
+      <form class="row align-items-center p-0 m-0 g-3 custom-centered needs-validation" novalidate>
 
-      <!-- Aside Content -->
-      <div class="row justify-content-center align-items-center m-0 p-0">
-        <!-- 
-        <div class="bg-img col-12 col-lg-6 col-md-6">
-          <h2 class="headingV">OUR VISION & MISSION</h2>
-          <dl class="ms-2">
-            <dt class="fw-semibold fs-5">VISION</dt>
-            <dd class="fw-normal fs-6 font ms-3">To make KS&EW leading Shipyard and Heavy Mechanical Engineering
-              facility in the region, thus
-              contributing positively towards technical and industrial development of Pakistan.</dd>
-            <dt class="fw-semibold fs-5">MISSION</dt>
-            <dd class="fw-normal fs-6 font ms-3">To achieve excellence in the fields of shipbuilding, sub marines'
-              construction, ship repairs and heavy
-              general engineering by exploiting our core competence and offer high quality products that meets
-              customer's entire satisfaction.</dd>
-          </dl>
-        </div> -->
-
-        <!-- Form -->
-        <div class="col-12 col-lg-12 col-md-12">
-          <h2 class="heading text-center fs-4 mb-2 mt-4 mt-lg-0">EMPLOYEE REGISTRATION</h2>
-          <form action="#" method="post" class="row g-3 needs-validation  align-items-center" novalidate>
-
-            <div class="col-12 col-md-6 col-lg-6 mt-Cus">
-              <label for="validationCustomID" class="form-label mb-1 p-0">Employee ID</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend"><img src="images/user.webp" alt="user"
-                    class="img-fluid" width="30"></span>
-                <input type="text" minlength="8" maxlength="12" class="form-control" id="validationCustomID"
-                  aria-describedby="inputGroupPrepend" placeholder="Employee ID" required>
-                <div class="invalid-tooltip mt-1">
-                  Please input your valid employee ID.
-                </div>
-              </div>
+        <div class="col-12 col-md-6 col-lg-6 mt-1 mt-lg-1 mt-md-1">
+          <label for="validationCustomID" class="form-label mb-1 p-0">Employee ID</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend"><img src="images/user.webp" alt="user"
+                class="img-fluid" width="30"></span>
+            <input type="text" minlength="8" maxlength="12" class="form-control" id="validationCustomID"
+              aria-describedby="inputGroupPrepend" placeholder="Employee ID" required>
+            <div class="invalid-tooltip mt-1">
+              Please input your valid employee ID.
             </div>
-
-            <div class="col-12 col-md-6 col-lg-6 mt-Cus">
-              <label for="validationCustomKSID" class="form-label mb-1 p-0">KS&EW Employee ID</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend"><img src="images/user.webp" alt="user"
-                    class="img-fluid" width="30"></span>
-                <input type="text" minlength="8" maxlength="12" class="form-control" id="validationCustomKSID"
-                  aria-describedby="inputGroupPrepend" placeholder="KS&EW Employee ID" required>
-                <div class="invalid-tooltip mt-1">
-                  Please input your valid KS&EW employee ID.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-6 mt-Cus">
-              <label for="validationCustomPassword" class="form-label mb-1 p-0">Password</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend"><img src="images/pass.webp" alt="password"
-                    class="img-fluid" width="30"></span>
-                <input type="password" minlength="8" maxlength="12" class="form-control" id="validationCustomPassword"
-                  aria-describedby="inputGroupPrepend" placeholder="Password" required>
-                <div class="invalid-tooltip mt-1">
-                  Please input your valid Password.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-6 mt-Cus">
-              <label for="validationCustomConfirmPassword" class="form-label mb-1 p-0">Confirm Password</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend"><img src="images/pass.webp" alt="password"
-                    class="img-fluid" width="30"></span>
-                <input type="password" minlength="8" maxlength="12" class="form-control"
-                  id="validationCustomConfirmPassword" aria-describedby="inputGroupPrepend"
-                  placeholder="Confirm Password" required>
-                <div class="invalid-tooltip mt-1">
-                  Please input your valid Confirm Password.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-6 mt-Cus">
-              <label for="validationCustomName" class="form-label mb-1 p-0">Employee Username</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend"><img src="images/user.webp" alt="user"
-                    class="img-fluid" width="30"></span>
-                <input type="text" minlength="8" maxlength="12" class="form-control" id="validationCustomName"
-                  aria-describedby="inputGroupPrepend" placeholder="Username" required>
-                <div class="invalid-tooltip mt-1">
-                  Please input your valid employee name.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-6 mt-Cus">
-              <label for="validationCustom04" class="form-label mb-1 p-0">Employee Shops & Hall</label>
-              <div class="input-group has-validation">
-                <select class="form-select" id="validationCustom04" required>
-                  <option selected disabled value="">Choose employee Hall or Shops</option>
-                  <optgroup label="KS&EW Hall">
-                    <option value="SBH">SBH: Shipbuilding Hall </option>
-                  </optgroup>
-                  <optgroup label="KS&EW Shops">
-                    <option value="LSF">LSF: Light Fabrication Shop</option>
-                    <option value="BFB">BFB: Block Fabrication</option>
-                    <option value="WLD">WLD: Welding Shop</option>
-                    <option value="PNT">PNT: Paint Shop</option>
-                    <option value="BTH">BTH: Berth</option>
-                    <option value="PFI">PFI: Pipe Fabrication and Installation</option>
-                    <option value="MOF">MOF: Machinery and Outfit</option>
-                    <option value="DKH">DKH: Deck and Hold Shop</option>
-                    <option value="SEL">SEL: Ship Electric Shop</option>
-                    <option value="CRP">CRP: Carpentry Shop</option>
-                  </optgroup>
-                </select>
-                <div class="invalid-tooltip mt-1">
-                  Please select a valid Shops/Hall.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-lg-12 mt-5 text-center">
-              <button class="btn btn-primary pt-2 pb-2 ps-5 pe-5 mb-4" type="submit">EMPLOYEE REGISTRATION</button>
-            </div>
-          </form>
+          </div>
         </div>
-      </div>
+
+        <div class="col-12 col-md-6 col-lg-6 mt-1 mt-lg-1 mt-md-1">
+          <label for="validationCustomKSID" class="form-label mb-1 p-0">KS&EW Employee ID</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend"><img src="images/user.webp" alt="user"
+                class="img-fluid" width="30"></span>
+            <input type="text" minlength="8" maxlength="12" class="form-control" id="validationCustomKSID"
+              aria-describedby="inputGroupPrepend" placeholder="KS&EW Employee ID" required>
+            <div class="invalid-tooltip mt-1">
+              Please input your valid KS&EW employee ID.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6 mt-5 mt-lg-5 mt-md-5">
+          <label for="validationCustomPassword" class="form-label mb-1 p-0">Password</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend"><img src="images/pass.webp" alt="password"
+                class="img-fluid" width="30"></span>
+            <input type="password" minlength="8" maxlength="12" class="form-control" id="validationCustomPassword"
+              aria-describedby="inputGroupPrepend" placeholder="Password" required>
+            <div class="invalid-tooltip mt-1">
+              Please input your valid Password.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6 mt-5 mt-lg-5 mt-md-5">
+          <label for="validationCustomConfirmPassword" class="form-label mb-1 p-0">Confirm Password</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend"><img src="images/pass.webp" alt="password"
+                class="img-fluid" width="30"></span>
+            <input type="password" minlength="8" maxlength="12" class="form-control"
+              id="validationCustomConfirmPassword" aria-describedby="inputGroupPrepend" placeholder="Confirm Password"
+              required>
+            <div class="invalid-tooltip mt-1">
+              Please input your valid Confirm Password.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6 mt-5 mt-lg-5 mt-md-5">
+          <label for="validationCustomName" class="form-label mb-1 p-0">Employee Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend"><img src="images/user.webp" alt="user"
+                class="img-fluid" width="30"></span>
+            <input type="text" minlength="8" maxlength="12" class="form-control" id="validationCustomName"
+              aria-describedby="inputGroupPrepend" placeholder="Username" required>
+            <div class="invalid-tooltip mt-1">
+              Please input your valid employee name.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6 mt-5 mt-lg-5 mt-md-5">
+          <label for="validationCustom04" class="form-label mb-1 p-0">Employee Shops & Hall</label>
+          <div class="input-group has-validation">
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose employee Hall or Shops</option>
+              <optgroup label="KS&EW Hall">
+                <option value="SBH">SBH: Shipbuilding Hall </option>
+              </optgroup>
+              <optgroup label="KS&EW Shops">
+                <option value="LSF">LSF: Light Fabrication Shop</option>
+                <option value="BFB">BFB: Block Fabrication</option>
+                <option value="WLD">WLD: Welding Shop</option>
+                <option value="PNT">PNT: Paint Shop</option>
+                <option value="BTH">BTH: Berth</option>
+                <option value="PFI">PFI: Pipe Fabrication and Installation</option>
+                <option value="MOF">MOF: Machinery and Outfit</option>
+                <option value="DKH">DKH: Deck and Hold Shop</option>
+                <option value="SEL">SEL: Ship Electric Shop</option>
+                <option value="CRP">CRP: Carpentry Shop</option>
+              </optgroup>
+            </select>
+            <div class="invalid-tooltip mt-1">
+              Please select a valid Shops/Hall.
+            </div>
+          </div>
+        </div>
+
+
+        <!-- button -->
+        <div class="col-12 text-center mt-4 p-0 mt-lg-4 mt-md-4">
+          <button
+            class="btn btn-primary ps-5 pt-3 pe-5 pb-3 ps-lg-5 pt-lg-3 pe-lg-5 pb-lg-3 ps-md-5 pt-md-3 pe-md-5 pb-md-3"
+            type="submit">REGISTER EMPLOYEE</button>
+        </div>
+      </form>
     </div>
   </main>
 
-  <footer class="footer m-0 p-3 bg-black-low">
-    <div class="container d-flex align-items-center">
-      <a class="text-white text-decoration-none ms-4" href="#" target="_blank">Privacy Policy</a>
-      <p class="m-0 text-white ms-auto me-4">&copy;Karachi Shipyard & Engineering Works 2022. All rights reserved.</p>
+  <footer id="footer" class="mt-auto bg-black-low">
+    <div class="container d-flex p-4 p-lg-4 p-md-4">
+      <a class="text-white text-decoration-none" href="#" target="_blank">Privacy Policy</a>
+      <p class="p-0 m-0 text-white ms-auto">&copy; Karachi Shipyard & Engineering Works 2022. All rights reserved.</p>
     </div>
   </footer>
+
 
   <!-- Script -->
   <script src="js/script.js"></script>

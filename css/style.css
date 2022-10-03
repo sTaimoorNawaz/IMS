@@ -1,34 +1,26 @@
 body {
-  background-color: #f4f4f4 !important;
-  min-height: 100% !important;
-  overflow: hidden !important;
+  background-color: #f4f4f4  !important;
 }
-
-/* .footer {
-  margin-top: 2.4rem;
-} */
-
-/* For Forgot Screen */
-.mt-Cus{
-  margin-top: 1.92rem !important;
-}
-
-/* Registration Screen */
-select{
-  padding: 0.6rem 1rem 0.6rem 1rem !important;
-}
-
-/* .bg-img {
-  background-image: url(../images/bg.webp) !important;
-  background-repeat: no-repeat; 
-  background-size: cover;
-  min-height: 29.67rem !important;
-} */
-
-.font {
-  text-align: justify;
-}
-
 .bg-black-low {
   background-color: #1e1e1e !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
